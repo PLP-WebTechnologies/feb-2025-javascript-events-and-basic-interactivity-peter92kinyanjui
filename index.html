@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wk-7-Js-PLP</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Unveiling the power of Javascript</h1>
+    
+    <!-- Event Handling Section -->
+    <section>
+        <h2>Event Handling 🎈</h2>
+        
+        <button id="clickMe" class="action-btn">Click Me!</button>
+        
+        <div id="hoverArea" style="padding: 20px; background: #e9e9e9; border-radius: 5px; margin: 10px 0;">
+            Hover over me to see magic!
+            <div id="hoverEffect" style="margin-top: 10px; display: none;">
+                ✨ You found the hover effect! ✨
+            </div>
+        </div>
+        
+        <div style="padding: 20px; background: #e9e9e9; border-radius: 5px; margin: 10px 0;">
+            Press any key to see it here: <span id="keyDisplay" style="font-weight: bold;"></span>
+        </div>
+        
+        <div id="secretTrigger" style="padding: 20px; background: #e9e9e9; border-radius: 5px; margin: 10px 0; cursor: pointer;">
+            Try double-clicking or long-pressing me!
+            <div id="longPressIndicator"></div>
+        </div>
+        
+        <div id="secretMessage">🎉 Secret unlocked! You're amazing! 🎉</div>
+    </section>
+    
+    <!-- Interactive Elements Section -->
+    <section>
+        <h2>Interactive Elements 🎮</h2>
+        
+        <button id="colorChanger" class="action-btn">Change My Color!</button>
+        
+        <div class="gallery">
+            <img src="images/image1.jpg" alt="gallery image">
+            <img src="images/image2.jpg" alt="gallery image">
+            <img src="images/image3.jpg" alt="gallery image">
+        </div>
+        
+        <img id="featuredImage" class="featured-image" src="https://source.unsplash.com/random/600x400?nature" alt="Featured">
+        
+        <div class="tabs">
+            <div class="tab active" data-tab="tab1">Tab 1</div>
+            <div class="tab" data-tab="tab2">Tab 2</div>
+            <div class="tab" data-tab="tab3">Tab 3</div>
+        </div>
+        
+        <div class="tab-content active" id="tab1">
+            <h3>Content for Tab 1</h3>
+            <p>This is the first tab content. Try clicking the other tabs!</p>
+        </div>
+        
+        <div class="tab-content" id="tab2">
+            <h3>Content for Tab 2</h3>
+            <p>Wow, you found the second tab! Great job!</p>
+        </div>
+        
+        <div class="tab-content" id="tab3">
+            <h3>Content for Tab 3</h3>
+            <p>Final tab content. You've explored them all! 🎉</p>
+        </div>
+    </section>
+    
+    <!-- Form Validation Section -->
+    <section>
+        <h2>Form Validation 📋✅</h2>
+        
+        <form id="userForm">
+            <div class="form-group">
+                <label for="username">Username (required)</label>
+                <input type="text" id="username" required>
+                <div class="error" id="usernameError"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+                <div class="error" id="emailError"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password (min 8 characters)</label>
+                <input type="password" id="password">
+                <div class="error" id="passwordError"></div>
+            </div>
+            
+            <button type="submit" class="action-btn">Submit</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+   
+</body>
+</html>
